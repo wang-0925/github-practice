@@ -6,7 +6,7 @@
 
 - [x] 初始化本地仓库并写 README
 - [x] 开一个分支，改 README，发起第一个 Pull Request
-- [ ] 用 Issue 记录一个待办，并在提交里引用它
+- [x] 用 Issue 记录一个待办，并在提交里引用它
 - [ ] 加一个 GitHub Actions 工作流，让它自动运行
 - [ ] 用 GitHub Pages 发布一个静态页面
 
@@ -33,3 +33,17 @@ git add .           # 把改动放进暂存区
 git commit -m "..." # 记录一次提交
 git push            # 同步到 GitHub
 ```
+
+## 克隆到本地
+
+```bash
+# 方式一：用 gh（会自动配置好认证）
+gh repo clone wang-0925/github-practice
+
+# 方式二：用 git
+git clone https://github.com/wang-0925/github-practice.git
+
+cd github-practice
+```
+
+克隆完成后进入目录，`git remote -v` 应该能看到名为 `origin` 的远程地址。
